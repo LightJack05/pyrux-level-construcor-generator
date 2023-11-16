@@ -12,7 +12,10 @@ cb = "}"
 
 
 def escape(string):
-    return string.replace("\r", "\\r")
+    try:
+        return string.replace("\r", "\\r")
+    except:
+        return string
 
 
 constructor = f"""
